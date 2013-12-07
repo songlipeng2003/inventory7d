@@ -45,3 +45,5 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-generators', '~> 3.0'
+
+gem 'simple_form', '~> 3.0.1'
