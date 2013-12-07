@@ -1,0 +1,15 @@
+zh-CN:
+  simple_form:
+    "yes": "是"
+    "no": "否"
+    required:
+      text: "必填的"
+      mark: "*"
+    error_notification:
+      default_message: "请查看下面的错误提示："
+    labels:
+      defaults:
+        name: "名称"
+        description: "描述"
+        created_at: "创建时间"
+        updated_at: "更新时间"
