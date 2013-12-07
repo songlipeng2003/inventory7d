@@ -1,9 +1,9 @@
 <div class="page-header">
   <%%= link_to <%= index_helper %>_path, :class => 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
-    Back
+    <%%= t('views.back') %>
   <%% end %>
-  <h1>New <%= singular_table_name %></h1>
+  <h1><%%= t 'views.new_model', :model => t('activerecord.models.<%= singular_table_name %>') %></h1>
 </div>
 
 <%%= render 'form' %>

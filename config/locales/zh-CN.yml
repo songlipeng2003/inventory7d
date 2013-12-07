@@ -1,0 +1,19 @@
+zh-CN:
+  activerecord:
+    models:
+      warehouse: "仓库"
+    attributes:
+      warehouse:
+        name: "名称"
+        description: "描述"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+  views:
+    show: "显示"
+    edit: "编辑"
+    destroy: "删除"
+    back: "返回"
+    list_model: "显示%{model}"
+    show_model: "显示%{model}"
+    new_model: "创建%{model}"
+    edit_model: "编辑%{model}"
