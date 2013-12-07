@@ -1,20 +1,18 @@
 <div class="page-header">
   <%= link_to new_warehouse_path, :class => 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-plus"></span>
-    New Warehouse
+    <%= t 'views.new_model', :model => t('activerecord.models.warehouse') %>
   <% end %>
-  <h1>Listing warehouses</h1>
+  <h1><%= t 'views.list_model', :model => t('activerecord.models.warehouse', :count => 2) %></h1>
 </div>
 
 <div class="table-responsive">
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
-            <th>Name</th>
-            <th>Description</th>
+            <th><%= t('activerecord.attributes.warehouse.name') %></th>
+            <th><%= t('activerecord.attributes.warehouse.description') %></th>
             <th></th>
-        <th></th>
-        <th></th>
       </tr>
     </thead>
 
@@ -22,9 +20,11 @@
       <%= content_tag_for(:tr, @warehouses) do |warehouse| %>
             <td><%= warehouse.name %></td>
             <td><%= warehouse.description %></td>
-            <td><%= link_to 'Show', warehouse %></td>
-        <td><%= link_to 'Edit', edit_warehouse_path(warehouse) %></td>
-        <td><%= link_to 'Destroy', warehouse, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td>
+          <%= link_to t('views.show'), warehouse %>
+          <%= link_to t('views.edit'), edit_warehouse_path(warehouse) %>
+          <%= link_to t('views.destroy'), warehouse, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
       <% end %>
     </tbody>
   </table>
