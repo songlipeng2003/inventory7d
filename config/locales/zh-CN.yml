@@ -2,8 +2,15 @@ zh-CN:
   activerecord:
     models:
       warehouse: "仓库"
+      product: "产品"
     attributes:
       warehouse:
+        name: "名称"
+        description: "描述"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+      product:
+        sn: "产品编号"
         name: "名称"
         description: "描述"
         created_at: "创建时间"

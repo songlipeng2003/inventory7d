@@ -1,0 +1,23 @@
+<div class="page-header">
+  <%= link_to products_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    <%= t('views.back') %>
+  <% end %>
+  <%= link_to edit_product_path(@product), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    <%= t('views.edit') %>
+  <% end %>
+  <h1><%= t 'views.show_model', :model => t('activerecord.models.product') %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><%= t('activerecord.attributes.product.sn') %>:</dt>
+  <dd><%= @product.sn %></dd>
+
+  <dt><%= t('activerecord.attributes.product.name') %>:</dt>
+  <dd><%= @product.name %></dd>
+
+  <dt><%= t('activerecord.attributes.product.description') %>:</dt>
+  <dd><%= @product.description %></dd>
+
+</dl>

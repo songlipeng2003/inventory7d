@@ -1,0 +1,13 @@
+<div class="page-header">
+  <%= link_to products_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    <%= t('views.back') %>
+  <% end %>
+  <%= link_to @product, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-info-sign"></span>
+    <%= t('views.show') %>
+  <% end %>
+  <h1><%= t 'views.edit_model', :model => t('activerecord.models.product') %></h1>
+</div>
+
+<%= render 'form' %>
