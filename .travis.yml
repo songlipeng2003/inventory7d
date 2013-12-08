@@ -1,5 +1,13 @@
 language: ruby
+
+services:
+  - mysql
+
 rvm:
   - 2.0.0
 
-script: RAILS_ENV=test bundle exec rake spec spec:javascript
+before_script:
+  - RAILS_ENV=test bundle exec rake db:create
+  - RAILS_ENV=test bundle exec rake db:migrate
+
+script: RAILS_ENV=test bundle exec rake spec
