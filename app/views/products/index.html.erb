@@ -12,7 +12,7 @@
       <tr>
             <th><%= t('activerecord.attributes.product.sn') %></th>
             <th><%= t('activerecord.attributes.product.name') %></th>
-            <th><%= t('activerecord.attributes.product.description') %></th>
+            <th><%= t('activerecord.attributes.product.stock') %></th>
             <th></th>
       </tr>
     </thead>
@@ -21,7 +21,7 @@
       <%= content_tag_for(:tr, @products) do |product| %>
             <td><%= product.sn %></td>
             <td><%= product.name %></td>
-            <td><%= product.description %></td>
+            <td><%= product.stock %></td>
             <td>
           <%= link_to t('views.show'), product %>
           <%= link_to t('views.edit'), edit_product_path(product) %>

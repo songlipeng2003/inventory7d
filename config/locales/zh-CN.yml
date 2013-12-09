@@ -12,6 +12,7 @@ zh-CN:
       product:
         sn: "产品编号"
         name: "名称"
+        stock: "库存"
         description: "描述"
         created_at: "创建时间"
         updated_at: "更新时间"
