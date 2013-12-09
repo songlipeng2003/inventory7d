@@ -46,6 +46,8 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl_rails', '~> 4.3.0'
+  gem 'capybara', '~>2.2.0'
 end
 
 gem 'bootstrap-generators', '~> 3.0'
