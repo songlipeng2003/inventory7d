@@ -6,7 +6,7 @@ describe "records/index" do
       stub_model(Record,
         :warehouse => nil,
         :product => nil,
-        :ios_type => 1,
+        :io_type => 1,
         :number => 2,
         :act_type => 3,
         :note => "Note"
@@ -14,7 +14,7 @@ describe "records/index" do
       stub_model(Record,
         :warehouse => nil,
         :product => nil,
-        :ios_type => 1,
+        :io_type => 1,
         :number => 2,
         :act_type => 3,
         :note => "Note"

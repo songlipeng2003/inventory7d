@@ -4,7 +4,7 @@ FactoryGirl.define do
   factory :record do
     warehouse nil
     product nil
-    ios_type 1
+    io_type 1
     number 1
     act_type 1
     note "MyString"

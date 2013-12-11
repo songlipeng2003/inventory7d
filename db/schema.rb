@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20131211090415) do
   create_table "records", force: true do |t|
     t.integer  "warehouse_id"
     t.integer  "product_id"
-    t.integer  "ios_type"
+    t.integer  "io_type"
     t.integer  "number"
     t.integer  "act_type"
     t.string   "note"
