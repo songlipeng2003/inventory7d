@@ -20,7 +20,7 @@ zh-CN:
         updated_at: "更新时间"
       record:
         warehouse: "仓库"
-        product: "仓库"
+        product: "产品"
         number: "数量"
         io_type: "出入库类型"
         act_type: "操作类型"
