@@ -4,6 +4,7 @@ zh-CN:
       warehouse: "仓库"
       product: "产品"
       record: '出入库记录'
+      user: "用户"
     attributes:
       warehouse:
         name: "名称"
@@ -26,7 +27,12 @@ zh-CN:
         note: "备注"
         created_at: "创建时间"
         updated_at: "更新时间"
-
+      user:
+        email: "Email"
+        password: "密码"
+        password_confirmation: "确认密码"
+        current_password: "当前密码"
+        remember_me: "记住我"
   views:
     show: "显示"
     edit: "编辑"

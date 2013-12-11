@@ -56,3 +56,5 @@ gem 'bootstrap-generators', '~> 3.0'
 gem 'simple_form', '~> 3.0.1'
 
 gem 'rails-i18n', '~> 4.0.0'
+
+gem 'devise', '~> 3.2.2'
