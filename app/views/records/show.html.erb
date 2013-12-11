@@ -1,0 +1,32 @@
+<div class="page-header">
+  <%= link_to records_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    <%= t('views.back') %>
+  <% end %>
+  <%= link_to edit_record_path(@record), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    <%= t('views.edit') %>
+  <% end %>
+  <h1><%= t 'views.show_model', :model => t('activerecord.models.record') %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><%= t('activerecord.attributes.record.warehouse') %>:</dt>
+  <dd><%= @record.warehouse %></dd>
+
+  <dt><%= t('activerecord.attributes.record.product') %>:</dt>
+  <dd><%= @record.product %></dd>
+
+  <dt><%= t('activerecord.attributes.record.ios_type') %>:</dt>
+  <dd><%= @record.ios_type %></dd>
+
+  <dt><%= t('activerecord.attributes.record.number') %>:</dt>
+  <dd><%= @record.number %></dd>
+
+  <dt><%= t('activerecord.attributes.record.act_type') %>:</dt>
+  <dd><%= @record.act_type %></dd>
+
+  <dt><%= t('activerecord.attributes.record.note') %>:</dt>
+  <dd><%= @record.note %></dd>
+
+</dl>

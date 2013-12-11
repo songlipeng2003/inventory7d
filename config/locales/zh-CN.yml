@@ -3,6 +3,7 @@ zh-CN:
     models:
       warehouse: "仓库"
       product: "产品"
+      record: '出入库记录'
     attributes:
       warehouse:
         name: "名称"
@@ -16,6 +17,16 @@ zh-CN:
         description: "描述"
         created_at: "创建时间"
         updated_at: "更新时间"
+      record:
+        warehouse: "仓库"
+        product: "仓库"
+        number: "数量"
+        io_type: "出入库类型"
+        act_type: "操作类型"
+        note: "备注"
+        created_at: "创建时间"
+        updated_at: "更新时间"
+
   views:
     show: "显示"
     edit: "编辑"

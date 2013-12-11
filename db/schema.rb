@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131211031331) do
+ActiveRecord::Schema.define(version: 20131211090415) do
 
   create_table "inventories", force: true do |t|
     t.integer  "warehouse_id"
@@ -32,6 +32,20 @@ ActiveRecord::Schema.define(version: 20131211031331) do
     t.datetime "updated_at"
     t.integer  "stock",       default: 0
   end
+
+  create_table "records", force: true do |t|
+    t.integer  "warehouse_id"
+    t.integer  "product_id"
+    t.integer  "ios_type"
+    t.integer  "number"
+    t.integer  "act_type"
+    t.string   "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "records", ["product_id"], name: "index_records_on_product_id", using: :btree
+  add_index "records", ["warehouse_id"], name: "index_records_on_warehouse_id", using: :btree
 
   create_table "warehouses", force: true do |t|
     t.string   "name"
