@@ -24,8 +24,9 @@ zh-CN:
       inactive: '您还没有激活帐户.'
     sessions:
       signed_in: '登录成功.'
-      signed_out: '' # 首页不要显示退出成功提示
+      signed_out: '退出成功' # 首页不要显示退出成功提示
     passwords:
+      no_token: "你不能从一个密码重置邮件外访问这个页面.如果你从密码重置邮件访问，请确认你使用的是完整的URL."
       send_instructions: '稍后你将收到重设密码的电子邮件'
       updated: '您的密码已修改成功，您现在已登录.'
       updated_not_active: '您的密码已修改成功.'
