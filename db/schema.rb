@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131209100714) do
+ActiveRecord::Schema.define(version: 20131211031331) do
+
+  create_table "inventories", force: true do |t|
+    t.integer  "warehouse_id"
+    t.integer  "product_id"
+    t.integer  "number",       default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "inventories", ["product_id"], name: "index_inventories_on_product_id", using: :btree
+  add_index "inventories", ["warehouse_id"], name: "index_inventories_on_warehouse_id", using: :btree
 
   create_table "products", force: true do |t|
     t.string   "sn"
