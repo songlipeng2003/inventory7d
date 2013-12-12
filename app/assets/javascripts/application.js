@@ -17,4 +17,5 @@
 //= require bootstrap
 //= require select2
 //= require select2_locale_zh-CN
+//= require angular
 //= require_tree .

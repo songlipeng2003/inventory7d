@@ -54,6 +54,7 @@ end
 # assets
 gem 'bootstrap-generators', '~> 3.0'
 gem 'select2-rails', '~> 3.5.2'
+gem 'angularjs-rails'
 
 #表单
 gem 'simple_form', '~> 3.0.1'
