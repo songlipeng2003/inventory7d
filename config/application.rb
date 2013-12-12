@@ -21,3 +21,5 @@ module Inventory7d
     config.i18n.default_locale = 'zh-CN'
   end
 end
+
+I18n.enforce_available_locales = false
