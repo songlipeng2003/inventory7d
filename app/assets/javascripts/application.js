@@ -15,4 +15,6 @@
 //= require turbolinks
 // Loads all Bootstrap javascripts
 //= require bootstrap
+//= require select2
+//= require select2_locale_zh-CN
 //= require_tree .

@@ -52,6 +52,7 @@ group :development, :test do
 end
 
 gem 'bootstrap-generators', '~> 3.0'
+gem 'select2-rails', '~> 3.5.2'
 
 gem 'simple_form', '~> 3.0.1'
 
