@@ -4,9 +4,9 @@
   <div class="form-inputs">
     <%= f.association :warehouse %>
     <%= f.association :product %>
-    <%= f.input :io_type %>
+    <%= f.input :io_type, :collection => Record::IO_TYPES.invert %>
+    <%= f.input :act_type, :collection => Record::ACT_TYPES.invert %>
     <%= f.input :number %>
-    <%= f.input :act_type %>
     <%= f.input :note %>
   </div>
 

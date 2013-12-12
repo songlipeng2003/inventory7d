@@ -19,9 +19,9 @@ describe "records/edit" do
     assert_select "form[action=?][method=?]", record_path(@record), "post" do
       assert_select "select#record_warehouse_id[name=?]", "record[warehouse_id]"
       assert_select "select#record_product_id[name=?]", "record[product_id]"
-      assert_select "input#record_io_type[name=?]", "record[io_type]"
+      assert_select "select#record_io_type[name=?]", "record[io_type]"
       assert_select "input#record_number[name=?]", "record[number]"
-      assert_select "input#record_act_type[name=?]", "record[act_type]"
+      assert_select "select#record_act_type[name=?]", "record[act_type]"
       assert_select "input#record_note[name=?]", "record[note]"
     end
   end
