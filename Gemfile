@@ -51,11 +51,18 @@ group :development, :test do
   gem 'database_cleaner', '~>1.2.0'
 end
 
+# assets
 gem 'bootstrap-generators', '~> 3.0'
 gem 'select2-rails', '~> 3.5.2'
 
+#表单
 gem 'simple_form', '~> 3.0.1'
 
 gem 'rails-i18n', '~> 4.0.0'
 
+#d登陆
 gem 'devise', '~> 3.2.2'
+
+# 分页
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap', '~> 1.0.0'
