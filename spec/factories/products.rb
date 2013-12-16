@@ -6,8 +6,9 @@ FactoryGirl.define do
       "622342323#{n}"
     end
     sequence :name do |n|
-      "warehouse name #{n}"
+      "product name #{n}"
     end
+    stock Random.new.rand(1..100000)
     description "Description"
   end
 end

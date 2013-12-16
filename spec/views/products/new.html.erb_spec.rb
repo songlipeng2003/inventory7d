@@ -2,11 +2,7 @@ require 'spec_helper'
 
 describe "products/new" do
   before(:each) do
-    assign(:product, stub_model(Product,
-      :sn => "MyString",
-      :name => "MyString",
-      :description => "MyString"
-    ).as_new_record)
+    assign(:product, build(:product))
   end
 
   it "renders new product form" do

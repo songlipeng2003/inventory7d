@@ -2,11 +2,7 @@ require 'spec_helper'
 
 describe "products/edit" do
   before(:each) do
-    @product = assign(:product, stub_model(Product,
-      :sn => "MyString",
-      :name => "MyString",
-      :description => "MyString"
-    ))
+    @product = assign(:product, build_stubbed(:product))
   end
 
   it "renders the edit product form" do
