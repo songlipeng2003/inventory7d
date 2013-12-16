@@ -60,4 +60,8 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+  
+  # Mix in FactoryGirl methods
+  config.include FactoryGirl::Syntax::Methods
 end
