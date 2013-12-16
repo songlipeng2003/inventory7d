@@ -2,10 +2,7 @@ require 'spec_helper'
 
 describe "warehouses/new" do
   before(:each) do
-    assign(:warehouse, stub_model(Warehouse,
-      :name => "MyString",
-      :description => "MyString"
-    ).as_new_record)
+    assign(:warehouse, build(:warehouse))
   end
 
   it "renders new warehouse form" do

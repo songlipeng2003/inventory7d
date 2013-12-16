@@ -3,7 +3,7 @@
 FactoryGirl.define do
   factory :warehouse do
     sequence :name do |n|
-      "warehouse name {n}"
+      "warehouse name #{n}"
     end
     description "Description"
   end

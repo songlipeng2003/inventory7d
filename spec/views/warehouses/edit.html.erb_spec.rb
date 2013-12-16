@@ -2,10 +2,7 @@ require 'spec_helper'
 
 describe "warehouses/edit" do
   before(:each) do
-    @warehouse = assign(:warehouse, stub_model(Warehouse,
-      :name => "MyString",
-      :description => "MyString"
-    ))
+    @warehouse = assign(:warehouse, build_stubbed(:warehouse))
   end
 
   it "renders the edit warehouse form" do
