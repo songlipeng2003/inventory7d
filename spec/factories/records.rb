@@ -2,11 +2,11 @@
 
 FactoryGirl.define do
   factory :record do
-    warehouse nil
-    product nil
-    io_type 1
-    number 1
-    act_type 1
+    warehouse
+    product
+    io_type Record::IO_TYPES.keys.sample
+    act_type Record::ACT_TYPES.keys.sample
+    number Random.new.rand(1..100000)
     note "MyString"
   end
 end
