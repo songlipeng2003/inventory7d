@@ -51,6 +51,11 @@ group :development, :test do
   gem 'database_cleaner', '~>1.2.0'
 end
 
+group :development, :test do
+  # https://coveralls.io/
+  gem 'coveralls', require: false
+en
+
 # assets
 gem 'bootstrap-generators', '~> 3.0'
 gem 'select2-rails', '~> 3.5.2'
