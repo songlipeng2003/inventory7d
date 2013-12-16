@@ -23,7 +23,9 @@ describe RecordsController do
   # This should return the minimal set of attributes required to create a valid
   # Record. As you add validations to Record, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { attributes_for :records }
+  let(:product) { create :product }
+  let(:warehouse) { create :warehouse }
+  let(:valid_attributes) { attributes_for :record, :product_id => product.id, :warehouse_id => warehouse.id }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
