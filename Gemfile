@@ -3,14 +3,14 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as the database for Active Record
-gem 'mysql2'
+# Use mysql2 as the database for Active Record
+gem 'mysql2', '~> 0.3.14'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '~> 2.3.3'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -59,7 +59,7 @@ end
 # assets
 gem 'bootstrap-generators', '~> 3.0'
 gem 'select2-rails', '~> 3.5.2'
-gem 'angularjs-rails'
+gem 'angularjs-rails', '~> 1.2.5'
 
 #表单
 gem 'simple_form', '~> 3.0.1'
