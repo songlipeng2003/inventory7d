@@ -1,4 +1,8 @@
-source 'https://rubygems.org'
+if ENV['TRAVIS']
+  source 'https://rubygems.org'
+else
+  source 'http://ruby.taobao.org'
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
